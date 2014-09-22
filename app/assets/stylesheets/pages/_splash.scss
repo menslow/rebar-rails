@@ -1,0 +1,95 @@
+.splash-intro {
+  background: url(../images/splash.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 6em 0;
+  // h1,h2,h3{color: white;}
+  h1, h2, h3 {
+    margin-bottom: $gutter/2;
+  }
+  .container {
+    @include outer-container;
+    .splash-head, .splash-follow, .splash-login {
+      @include span-columns(4);
+    }
+    .splash-login {
+      @include omega();
+    }
+    .splash-form {
+      @include span-columns(6);
+      @include shift(3);
+      @include omega();
+      input.email{
+        display:inline-block;
+        width:40%;
+      }
+    }
+    .splash-hero {
+      @include span-columns(2);
+      @include shift(5);
+      @include omega();
+      .icon.image-rounded {
+        @include border-top-radius(50px);
+        @include border-bottom-radius(50px);
+        margin: 2em 0;
+      }
+    }
+    .splash-video {
+      padding: 2.4em 0;
+      @include span-columns(6);
+      @include shift(3);
+      @include omega();
+    }
+  }
+}
+
+.splash-how {
+  padding: 2em 0;
+  color: $secondary;
+}
+
+// @include media($large-screen) {}
+
+.splash-cta {
+  // background-image: url(../images/artwork.png);
+  background: url(../images/splash/157.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;  padding: 10em 0;
+
+  .container {
+    @include outer-container;
+  }
+  .content {
+    @include span-columns(6);
+    @include shift(3);
+    @include omega();
+  }
+  .splash-appstore {
+    width: 200px;
+    height: auto;
+  }
+}
+
+.splash-info {
+  padding: 2.4em 5em;
+
+  background: $tertiary;
+  color: #fff;
+  .container {
+    @include outer-container;
+    .splash-infobox {
+      @include media($medium-screen) {
+        @include span-columns(4);
+      }
+    }
+  }
+}
+
+.icon-xlarge {
+  font-size: 5em;
+  color: white;
+}

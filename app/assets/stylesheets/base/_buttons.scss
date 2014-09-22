@@ -1,10 +1,40 @@
+.button,
 button,
 input[type="submit"] {
-  @extend %button;
-  @include appearance(none);
-  border: none;
-  cursor: pointer;
-  user-select: none;
-  vertical-align: middle;
-  white-space: nowrap;
+  @include bbb_flat_style($primary, white);
+  font-family: $sans-serif;
+  font-size: .9rem;
+  text-transform: uppercase;
+  text-align: center;
+  
+  &.flat {
+
+  }
+
+  &.hollow {
+    @include bbb_bordered_style($primary, $primary);
+    margin-top: 23px;
+    margin-right: 23px;
+  }
+
+  &.narrow {
+    @include bbb_flat_style($dark-gray, white);
+    width: 50%;
+    font-size: 0.8em;
+  }
+
+  &.white {
+      @include bbb_bordered_style(white, white);
+    }
+
+  &.label {
+    @include bbb_flat_style($dark-gray, white);
+    padding: 3px 8px;
+    font-size: 0.7em;
+    margin: 0 12px 12px 0;
+  }
+    
+  &.trans {
+    @include bbb_bordered_style(rgba(white, .5), rgba(white, .5));
+  }
 }

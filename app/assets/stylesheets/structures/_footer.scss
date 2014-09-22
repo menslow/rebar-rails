@@ -1,0 +1,73 @@
+.footer {
+  $footer-background: darken($dark-gray, 23%);
+  $footer-color: white;
+  $footer-link-color: transparentize($footer-color, .6);
+  $footer-disclaimer-color: transparentize($footer-color, .8);
+
+  background: $footer-background;
+  padding: $base-spacing*2 $gutter;
+  width: 100%;
+
+  .footer-logo {
+    @extend %trans-logo;
+    text-align: center;
+
+    @include media($medium-screen) {
+      text-align: left;
+    }
+
+    svg {
+      height: 3em;
+    }
+  }
+
+  .footer-links {
+    @include clearfix;
+    margin-bottom: $base-spacing;
+  }
+
+  ul {
+    margin-bottom: $base-spacing*2;
+
+    @include media($medium-screen) {
+      @include span-columns(3);
+      @include omega(4n);
+      @include clearfix;
+    }
+  }
+
+  li {
+    text-align: center;
+
+    @include media($medium-screen) {
+      text-align: left;
+    }
+  }
+
+  a {
+    color: $footer-link-color;
+
+    &:hover {
+      color: transparentize($footer-color, 0);
+    }
+  }
+
+  li h3, li h1 {
+    color: $footer-color;
+    font-size: 1em;
+  }
+
+  hr {
+    border: 1px solid transparentize($footer-disclaimer-color, .3);
+    margin: 0 auto $base-spacing;
+    width: 12em;
+  }
+
+  p {
+    font-size: .8em;
+    color: $footer-disclaimer-color;
+    margin: auto;
+    max-width: 65em;
+    text-align: center;
+  }
+}
