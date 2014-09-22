@@ -1,0 +1,125 @@
+// Grid
+
+// Neat Overrides
+$column: 90px;
+$gutter: 23px;
+$grid-columns: 12;
+$max-width: em(1400);
+
+// Breakpoints
+$medium-screen: em(640);
+$large-screen: em(860);
+
+$medium-screen-up: new-breakpoint(min-width $medium-screen 4);
+$large-screen-up: new-breakpoint(min-width $large-screen 8);
+
+// Colors
+$blue: #477DCA;
+$black: #372D2D;
+$light-gray: #F3F4F6;
+$medium-gray: #DCDFE4;
+$dark-gray: #646E82;
+$primary: #F55A5F;
+$secondary: #F7755A;
+$tertiary: #FAA064;
+$light-red: #FBE3E4;
+$light-yellow: #FFF6BF;
+$light-green: #E6EFC2;
+
+// Background Color
+$base-background-color: white;
+
+// Font Colors
+$base-font-color: $dark-gray;
+$base-accent-color: $blue;
+
+// Link Colors
+$base-link-color: $primary;
+$hover-link-color: darken($primary, 15);
+$base-button-color: $dark-gray;
+$hover-button-color: $hover-link-color;
+
+// Flash Colors
+$alert-color: $light-yellow;
+$error-color: $light-red;
+$notice-color: lighten($base-accent-color, 40);
+$success-color: $light-green;
+
+// Border color
+$base-border-color: $light-gray;
+$base-border: 1px solid $base-border-color;
+
+// Type
+$sans-serif: 'encode_sans_normalregular', sans-serif;
+$sans-serif-2: 'encode_sans_compressedlight', sans-serif;
+
+$serif: $georgia;
+
+$base-font-family: $sans-serif;
+$header-font-family: $base-font-family;
+
+$base-font-size: 1.125rem;
+$base-line-height: 1.6875;
+$measure: 760px;
+
+$h1-font-size: 2.6875rem;
+$h1-line: 1.6875rem;
+$h1-lines: 2;
+$h1-line-height: $h1-line * $h1-lines;
+$h1-margin-top: 2 * $h1-line;
+$h1-margin-bottom: 1 * $h1-line;
+
+$h2-font-size: 2rem;
+$h2-line: 1.6875rem;
+$h2-lines: 2;
+$h2-line-height: $h2-line * $h2-lines;
+$h2-margin-top: 2 * $h2-line;
+$h2-margin-bottom: 1 * $h2-line;
+
+$h3-font-size: 1.5rem;
+$h3-line: 1.6875rem;
+$h3-lines: 1;
+$h3-line-height: $h3-line * $h3-lines;
+$h3-margin-top: 1 * $h3-line;
+$h3-margin-bottom: 1 * $h3-line;
+
+$h4-font-size: 1.125rem;
+$h4-line: 1.6875rem;
+$h4-lines: 1;
+$h4-line-height: $h4-line * $h4-lines;
+$h4-margin-top: 1 * $h4-line;
+$h4-margin-bottom: 1 * $h4-line;
+$header-line-height: 1.5;
+
+$h5-font-size: 1.125rem;
+$h5-line: 1.6875rem;
+$h5-lines: 1;
+$h5-line-height: $h4-line * $h4-lines;
+$h5-margin-top: 1 * $h4-line;
+$h5-margin-bottom: 1 * $h4-line;
+$header-line-height: 1.5;
+
+$h6-font-size: 1.125rem;
+$h6-line: 1.6875rem;
+$h6-lines: 1;
+$h6-line-height: $h4-line * $h4-lines;
+$h6-margin-top: 1 * $h4-line;
+$h6-margin-bottom: 1 * $h4-line;
+$header-line-height: 1.5;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: $base-line-height * 1em;
+$base-z-index: 0;
+
+// Forms
+$form-border-color: $base-border-color;
+$form-border-color-hover: darken($base-border-color, 10);
+$form-border-color-focus: $base-accent-color;
+$form-border-radius: $base-border-radius;
+$form-box-shadow: inset 0 1px 3px rgba(black,0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px rgba(darken($form-border-color-focus, 5), 0.7);
+$form-font-size: $base-font-size;
+$form-font-family: $base-font-family;
+
+// Transitions

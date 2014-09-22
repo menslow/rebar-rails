@@ -1,0 +1,23 @@
+<header class="navigation">
+  <div class="navigation-wrapper">
+    {{#link-to 'index' class='logo'}}
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="">
+    {{/link-to}}
+    <a href="" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+    <div class="nav">
+      <ul id="navigation-menu">
+        <li class="nav-link">{{#link-to 'patterns'}}Patterns{{/link-to}}</a></li>
+        <li class="nav-link">{{#link-to 'projects'}}Projects{{/link-to}}</a></li>
+        <li class="nav-link">{{#link-to 'contact'}}Contact{{/link-to}}</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+<section class="container">
+  <section class="inner-content">
+    {{ outlet }}
+  </section>
+</section>
+<footer>
+  &copy; 2014 Mister Machine, LLC
+</footer>

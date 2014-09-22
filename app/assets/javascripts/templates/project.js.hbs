@@ -1,0 +1,15 @@
+{{outlet}}
+
+{{#unless isEditing}}
+
+  <article id="lead">
+    <h1>{{ model.fullName }}</h1>
+    {{link-to 'edit' 'project.edit' model classNames='edit'}}
+
+    <p>Name: {{model.name}}</p>
+    <p>Description: {{model.description}}</p>
+    <p>Active: {{model.active}}</p>
+    <p><a class="delete" href="#" click="delete">delete</a>
+  </article>
+
+{{/unless}}
