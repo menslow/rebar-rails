@@ -1,20 +1,27 @@
-.hero {
-  $hero-background-top: darken($base-accent-color, 25); 
-  $hero-background-bottom: adjust-hue($hero-background-top, -70);
-  $hero-color: white;
-  $gradient-angle: 10deg;
-  $hero-image: 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png';
+$hero-background-top: darken($base-accent-color, 25); 
+$hero-background-bottom: adjust-hue($hero-background-top, -70);
+$hero-color: white;
+$gradient-angle: 10deg;
+//$hero-image: 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png';
+$base-background-color: #fff;
 
-  @include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
+.hero {
+
+  //@include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
 
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
   padding-bottom: 4em;
 
-  .hero-logo img {
+  .hero-logo svg {
+    @extend %trans-logo;
     height: 3em;
     margin-bottom: 2.5em;
+
+    @include media($large-screen) {
+      height: 5em;
+    }  
   }
 
   .hero-inner {
@@ -26,7 +33,9 @@
     color: $hero-color;
 
     button {
-      @include button(simple, $base-background-color);
+      // @include button(simple, $base-background-color);
+      // @extend %hollow-button;
+      @include bbb_bordered_style(white, white);
       font-size: $base-font-size;
       outline: none;
     }

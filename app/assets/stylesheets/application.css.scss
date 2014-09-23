@@ -14,10 +14,16 @@
  */
 
 @import "base/normalize";
+
+/* Thoughtbot */
 @import "bourbon";
 @import "neat";
+
+/* Tools (mixins) */
 @import "settings";
 @import "tools/tools";
+
+/* Config */
 @import "base/bitters/base";
 @import "base/refills/refills";
 @import "base/global";

@@ -1,0 +1,17 @@
+header.navigation .logo {
+
+}
+
+.navigation {
+  svg {
+  //  @extend %bright-logo;
+  }
+}
+
+.logo-sm {
+  text-align: center;
+  
+  svg {
+    height: 10em;
+  }
+}

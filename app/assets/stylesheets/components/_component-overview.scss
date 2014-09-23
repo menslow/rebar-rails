@@ -1,0 +1,48 @@
+.component-overview {
+  background: #efefef;
+  position: relative;
+
+  .overview-container {
+    @include outer-container();
+    padding-bottom: $gutter;
+
+    .artwork-frame {
+      @include media($large-screen) {
+        @include span-columns(8);
+        padding: $gutter 0 0 $gutter;
+      }
+    }
+
+    .artwork-metadata {
+      padding: $gutter;
+
+      @include media($large-screen) {
+        @include span-columns(4);
+        padding-left: 0;
+      }
+      .stats {
+        padding: 0;
+      }
+    }
+
+    .artwork-actions {
+      @include media($large-screen) {
+        // position: absolute;
+        // bottom: $gutter;
+      }
+    }
+  }
+
+  &.dark {
+    background: darken($dark-gray, 23%);
+    color: #fff;
+
+    .overview-container {
+      padding-bottom: 0;
+
+      .artwork-frame {
+        padding: 0;
+      }
+    }
+  }
+}

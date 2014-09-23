@@ -1,0 +1,82 @@
+.image-gradient-dynamic {
+  $image-gradient-color-top: $black; 
+  $transparency-top: .9;
+  $image-gradient-color-bottom: $light-gray; 
+  $transparency-bottom: .6;
+  $vertical-angle: 0deg;
+
+  $image-gradient-color-left: teal; 
+  $transparency-left: .8;
+  $image-gradient-color-right: yellow; 
+  $transparency-right: .8;
+  $horizontal-angle: 90deg;
+
+  position: relative;
+  line-height: 0;
+  width: 100%;
+  margin-bottom: $base-line-height;  
+
+  img {
+   width: 100%;
+   height: auto;
+   position: relative;
+   top: 0;
+   left: 0; 
+  }
+
+  .copy {
+    height: 100%;
+    margin: auto;
+    padding-top: $gutter * 2;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+
+    @include media($medium-screen) {
+      height: auto;
+      left: 50%;
+      padding-top: 0;
+      position: absolute;
+      top: 50%;
+      width: auto;
+
+      @include transform(translate(-50%, -50%));
+      -webkit-transform: translate(-50%, -50%);
+    }
+
+    .title {
+      font-family: $sans-serif-widebold;
+      color: white;
+      width: 100%;
+    }
+
+    p {
+      line-height: 1.5em;
+      padding: 1em 0;
+      position: relative;
+      color: white;
+      font-weight: 800;
+
+      @include media($large-screen) {
+        padding: 1em 2em;
+      }
+    }
+  }
+
+  .overlay {
+    @include linear-gradient($vertical-angle, transparentize($image-gradient-color-top, $transparency-top), 
+      transparentize($image-gradient-color-bottom, $transparency-bottom));
+    display: block;
+    @include position(absolute, 0px 0px 0px 0px);
+
+    // &:after {
+    //   content: '';
+    //   @include linear-gradient($horizontal-angle, transparentize($image-gradient-color-left, $transparency-left), 
+    //     transparentize($image-gradient-color-right, $transparency-right));
+    //   display: block;
+    //   @include position(absolute, 0px 0px 0px 0px);
+    // }
+  }
+}

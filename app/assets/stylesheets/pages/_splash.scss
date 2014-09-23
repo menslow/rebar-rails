@@ -53,8 +53,8 @@
 // @include media($large-screen) {}
 
 .splash-cta {
-  // background-image: url(../images/artwork.png);
-  background: url(../images/splash/157.jpg) no-repeat center center;
+  // background-image: url( image_url("artwork.png") );
+  background: url( image_url("splash/157.jpg") ) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

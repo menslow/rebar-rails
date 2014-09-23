@@ -21,7 +21,7 @@
 
 // for more details see: http://emberjs.com/guides/application/
 App = Ember.Application.create({
-  rootElement: '#tool-projects'
+  rootElement: '#rebar'
 });
 
 //= require_tree .
