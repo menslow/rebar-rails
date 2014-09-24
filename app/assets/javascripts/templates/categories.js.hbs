@@ -1,0 +1,12 @@
+<div class="intro-text">
+  <h3>Categories</h3>
+  <aside id="categories">
+    <ul>
+      {{#each category in categories}}
+      <li>{{ category.name }}</li>
+      {{/each}}
+    </ul>
+  </aside>
+</div>
+
+{{outlet}}

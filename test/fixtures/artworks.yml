@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  artist_id: 1
+  title: MyString
+  year: 1
+  intro: MyText
+  description: MyText
+  edition: 1
+  medium: MyString
+  price: 1.5
+  image_url: MyString
+  collectors: 1
+  views: 1
+  favorites: 1
+
+two:
+  artist_id: 1
+  title: MyString
+  year: 1
+  intro: MyText
+  description: MyText
+  edition: 1
+  medium: MyString
+  price: 1.5
+  image_url: MyString
+  collectors: 1
+  views: 1
+  favorites: 1

@@ -1,10 +1,9 @@
 <div class="intro-text">
   <h3>Projects</h3>
   <aside id="projects">
-    {{link-to 'New Project' 'projects.new'}}
     <ul>
       {{#each project in projects}}
-      <li>{{#link-to 'project' project }}{{ project.name }}{{/link-to}}</li>
+      <li>{{ project.name }}</li>
       {{/each}}
     </ul>
   </aside>

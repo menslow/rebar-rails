@@ -1,3 +1,6 @@
+// var inflector = Ember.Inflector.inflector;
+// inflector.irregular('category', 'categories');
+
 App.ApplicationStore = DS.Store.extend({
 
 });
